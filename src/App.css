@@ -1,5 +1,4 @@
 .App{
-  width: 50vw;
   margin:0 auto;
   color: white;
   position: relative;
@@ -7,8 +6,7 @@
   height: 530px;
   background-color: #1c1c1c;
   border-radius: 50px 5px;
-  padding: 1.5rem;
-  margin: 1rem;
+  padding: 1rem;
   overflow: hidden;
 }
 .App::before{
@@ -21,6 +19,7 @@
   background: linear-gradient(60deg,transparent,#45f3ff,#45f3ff);
   transform-origin: bottom right;
   animation: animate 6s linear infinite;
+  overflow: hidden;
 }
 .App::after{
   content: '';
@@ -33,6 +32,7 @@
   transform-origin: bottom right;
   animation: animate 6s linear infinite;
   animation-delay: -3s;
+  overflow: hidden;
 }
 .heading{
   text-align: center;
@@ -41,7 +41,7 @@
 .inputBox{
   position: relative;
   margin-top: 15px;
-  width: 300px;
+  width: 100%;
 }
 .inputBox input{
   border: none;
@@ -68,6 +68,7 @@
   }
 }
 .form{
+
   position: absolute;
   inset: 2px;
   border-radius: 50px 5px;
@@ -116,4 +117,40 @@ button:active{
   color: #45f3ff;
   transform: translateX(-20px) translateY(-30px);
   font-size: 0.75em;
+}
+@media (max-width: 768px) {
+  .App {
+      height: 400px;
+      padding: 1rem;
+  }
+  .inputBox label{
+    top: 10px;
+    left: 10px;
+  }
+  .form {
+      padding: 20px;
+  }
+
+  button {
+      font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .App {
+      max-width:300px;
+      height: 400px;
+      padding: 0.5rem;
+  }
+  .inputBox label{
+    top: 10px;
+    left: 10px;
+  }
+  .form {
+      padding: 15px;
+  }
+
+  button {
+      font-size: 16px;
+  }
 }

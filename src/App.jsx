@@ -69,9 +69,7 @@ function App() {
       console.log('Form is invalid');
     }
   };
-  function myFunction(key, value) {
-    console.log(`Key: ${key}, Value: ${value}`);
-  }
+ 
   
   return (
     <>
