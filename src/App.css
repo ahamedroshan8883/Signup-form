@@ -142,6 +142,7 @@ button:active{
       height: 400px;
       padding: 0.5rem;
   }
+
   .inputBox label{
     top: 10px;
     left: 10px;
@@ -149,7 +150,12 @@ button:active{
   .form {
       padding: 15px;
   }
-
+  .inputBox{
+    margin: 0;
+  }
+  .inputBox input{
+    padding: 15px 10px 0;
+  }
   button {
       font-size: 16px;
   }
